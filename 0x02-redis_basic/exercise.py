@@ -8,7 +8,8 @@ from functools import wraps
 
 
 def count_calls(method: Callable) -> Callable:
-    """Decorator to count how many times methods of the Cache class are called."""
+    """Decorator to count how many times methods of
+    the Cache class are called."""
     key = method.__qualname__
 
     @wraps(method)
